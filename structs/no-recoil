@@ -1,0 +1,47 @@
+
+  ,         ,
+ /           \
+((__-^^-,-^^-__))
+ `-_---' `---_-'
+  `--|o` 'o|--'
+     \  `  /
+      ): :(
+      :o_o:
+       "-"
+
+
+## [ globals ]
+
+const uintptr_t dwLocalPlayerPawn = 0x1823A08; // local player pawn ptr
+const uintptr_t dwViewAngles      = 0x1933930; // write new angles here
+
+
+## [ recoil vector ]
+
+> path from player pawn to the aim punch angle value.
+
+1.  `[c_csplayerpawn* p_pawn]`
+2.  `-> m_aimPunchAngle`        [0x1584]     // ret: QAngle
+
+
+## [ entity intel ]
+
+> for recoil control logic.
+
+const uintptr_t m_iShotsFired     = 0x23FC; // needed to scale control
+const uintptr_t m_aimPunchAngle   = 0x1584; // the visual recoil to counteract
+
+
+## [ logic stubs ]
+
+> functions to use.
+
+// system
+void get_aim_punch(void* p_pawn, vector3& punch_angles);
+int get_shots_fired(void* p_pawn);
+void get_current_angles(vector3& view_angles);
+void set_view_angles(vector3 new_angles);
+
+// core
+vector3 calculate_rcs_angles(vector3 old_angles, vector3 aim_punch);
+
