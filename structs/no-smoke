@@ -1,0 +1,45 @@
+
+  ,         ,
+ /           \
+((__-^^-,-^^-__))
+ `-_---' `---_-'
+  `--|o` 'o|--'
+     \  `  /
+      ): :(
+      :o_o:
+       "-"
+
+
+## [ globals ]
+
+const uintptr_t dwEntityList = 0x18C1DB8;
+
+
+## [ smoke vector ]
+
+> path from smoke entity ptr to its start tick.
+
+1.  `[c_smokegrenade_projectile* p_smoke]`
+2.  `-> m_nSmokeEffectTickBegin` [0x1210]     // ret: int32
+
+
+## [ entity intel ]
+
+> for identifying and manipulating smoke.
+
+const uintptr_t m_nSmokeEffectTickBegin = 0x1210; // from C_SmokeGrenadeProjectile
+const uintptr_t m_pEntity               = 0x10;   // from CEntityInstance
+
+
+## [ logic stubs ]
+
+> functions to use.
+
+// system
+void* get_entity_by_index(int index);
+const char* get_entity_class_name(void* p_entity);
+
+// core
+bool is_smoke_entity(const char* class_name);
+void set_smoke_expired(void* p_smoke_entity);
+
