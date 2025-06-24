@@ -1,4 +1,4 @@
-# pwn-structs for cs2
+# pwn-structs => Structs, Offsets And More For CS2
 > raw, updated, and ready to paste.
 > patch: june 2025 // status: updated
 
