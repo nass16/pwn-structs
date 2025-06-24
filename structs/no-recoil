@@ -12,8 +12,8 @@
 
 ## [ globals ]
 
-const uintptr_t dwLocalPlayerPawn = 0x1823A08; // local player pawn ptr
-const uintptr_t dwViewAngles      = 0x1933930; // write new angles here
+const uintptr_t dwLocalPlayerPawn = 0x1823A08;
+const uintptr_t dwViewAngles = 0x1933930;
 
 
 ## [ recoil vector ]
@@ -28,8 +28,8 @@ const uintptr_t dwViewAngles      = 0x1933930; // write new angles here
 
 > for recoil control logic.
 
-const uintptr_t m_iShotsFired     = 0x23FC; // needed to scale control
-const uintptr_t m_aimPunchAngle   = 0x1584; // the visual recoil to counteract
+const uintptr_t m_iShotsFired     = 0x23FC;
+const uintptr_t m_aimPunchAngle   = 0x1584;
 
 
 ## [ logic stubs ]
