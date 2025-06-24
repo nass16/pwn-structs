@@ -2,17 +2,17 @@
 > raw, updated, and ready to paste.
 > patch: june 2025 // status: undetected
 
-
-  ,         ,
- /           \
-((__-^^-,-^^-__))
- `-_---' `---_-'
-  `--|o` 'o|--'
-     \  `  /
-      ): :(
-      :o_o:
-       "-"
-
+<pre>
+      ,         ,
+     /           \
+    ((__-^^-,-^^-__))
+     `-_---' `---_-'
+      `--|o` 'o|--'
+         \  `  /
+          ): :(
+          :o_o:
+           "-"
+</pre>
 
 ## [ // data ]
 
@@ -31,4 +31,3 @@ pasting without understanding the logic is a sin. don't get clapped by vac.
 ## [ // prs ]
 
 pull requests with clean data are welcome.
-
