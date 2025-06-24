@@ -1,0 +1,45 @@
+  ,         ,
+ /           \
+((__-^^-,-^^-__))
+ `-_---' `---_-'
+  `--|o` 'o|--'
+     \  `  /
+      ): :(
+      :o_o:
+       "-"
+
+
+## [ globals ] - Correct, but found via pattern scanning
+
+const uintptr_t dwEntityList      = 0x18C1DB8; // entry to entity list
+const uintptr_t dwLocalPlayerPawn = 0x1823A08; // local player pawn ptr
+
+
+## [ crosshair vector ] - Correct, but not in dumper files
+
+> path from player pawn to the entity index under your crosshair.
+
+1.  `[c_csplayerpawn* p_pawn]`
+2.  `-> m_iIDEntIndex`          [0x15A4]     // ret: int32_t
+
+
+## [ entity intel ] - 101% Correct from client_dll.txt
+
+> for target validation.
+
+const uintptr_t m_iHealth         = 0x344; // from C_BaseEntity
+const uintptr_t m_iTeamNum        = 0x3E3; // from C_BaseEntity
+const uintptr_t m_lifeState       = 0x34C; // from C_BaseEntity
+
+
+## [ logic stubs ]
+
+> functions to use.
+
+// system
+int get_crosshair_target_idx(void* p_pawn);
+void* get_entity_by_index(int index);
+
+// core
+bool is_enemy(void* p_local_pawn, void* p_target_pawn);
+bool is_alive(void* p_target_pawn);
