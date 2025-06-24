@@ -35,7 +35,7 @@ const uintptr_t m_lifeState       = 0x348;
 
 ## [ logic stubs ]
 
-> functions to build.
+> functions to use.
 
 // system
 void get_entity_list(void* p_list);
