@@ -36,3 +36,6 @@ The offsets are divided into two main types:
 * **Global Offsets / Signatures**: These are base addresses for core game interfaces and objects (e.g., `dwLocalPlayerPawn`, `dwViewMatrix`). You find these in memory by pattern scanning. **These change with almost every game update.**
 * **Class Member Offsets / Netvars**: These are offsets from a base address of an entity or object (e.g., `m_iHealth` is an offset from the player pawn's address). These are generally more stable between updates but can still change.
 
+
+# IF IM MISSING ANY OFFSETS DM ME ON DISCORD: 0x.swyzz
+
