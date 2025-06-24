@@ -15,7 +15,7 @@ const uintptr_t dwEntityList      = 0x18C1DB8; // entry to entity list
 const uintptr_t dwLocalPlayerPawn = 0x1823A08; // local player pawn ptr
 
 
-## [ crosshair vector ] - Correct, but not in dumper files
+## [ crosshair vector ] 
 
 > path from player pawn to the entity index under your crosshair.
 
@@ -23,7 +23,7 @@ const uintptr_t dwLocalPlayerPawn = 0x1823A08; // local player pawn ptr
 2.  `-> m_iIDEntIndex`          [0x15A4]     // ret: int32_t
 
 
-## [ entity intel ] - 101% Correct from client_dll.txt
+## [ entity intel ] 
 
 > for target validation.
 
