@@ -9,7 +9,7 @@
        "-"
 
 
-## [ globals ] - Correct, but found via pattern scanning
+## [ globals ]
 
 const uintptr_t dwEntityList      = 0x18C1DB8; // entry to entity list
 const uintptr_t dwLocalPlayerPawn = 0x1823A08; // local player pawn ptr
