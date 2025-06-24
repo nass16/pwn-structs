@@ -1,4 +1,4 @@
-# pwn-structs
+# pwn-structs for cs2
 > raw, updated, and ready to paste.
 > patch: june 2025 // status: updated
 
