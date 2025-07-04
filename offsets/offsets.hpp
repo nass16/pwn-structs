@@ -1,10 +1,6 @@
 #pragma once
 #include <cstddef>
 
-namespace signatures {
-    constexpr const char* dwCreateMove = "48 8B C4 48 89 58 18 55 56 57 41 54 41 55 41 56 41 57 48 8D 68 A1";
-}
-
 namespace offsets {
 
     constexpr std::ptrdiff_t dwCSGOInput = 0x1A77100;
