@@ -1,6 +1,6 @@
-# pwn-structs => Structs, Offsets And More For CS2
+# pwn-structs => Offsets And More For CS2
 > raw, updated, and ready to paste.
-> patch: june 2025 // status: updated
+> patch: july 2025 // status: updated
 
 <pre>
       ,         ,
@@ -19,10 +19,6 @@
 a collection of reversed data for cs2.
 
 -   `offsets.hpp`      // globals
--   `client.dll.hpp`   // client structs
--   `engine2.dll.hpp`  // engine structs
--   `server.dll.hpp`   // server structs
--   `/structs`         // feature-specific logic (no flash, no smoke and ALOT more)
 
 ## [ // warning ]
 
