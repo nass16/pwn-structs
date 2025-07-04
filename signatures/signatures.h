@@ -12,3 +12,4 @@ namespace signatures {
 
   // Last Updated: 2025-07-04
  // please star this repo Finding this took some time had to RE client.dll to locate the CreateMove function addy (0x7FFBE57DB490) and get the client.dll base addy (0x7FFBE4980000) then calculate the final offset
+// dwCreateMove func addy: 0x7FFBE57DB490 (used for function pointer)
